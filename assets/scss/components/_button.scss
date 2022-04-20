@@ -1,0 +1,15 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: em(18) em(31);
+  cursor: pointer;
+
+  &-block {
+    display: block;
+    width: 100%;
+  }
+  &-rounded {
+    border-radius: 100px;
+  }
+}

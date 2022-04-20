@@ -1,0 +1,33 @@
+$baseFontSize: 16;
+$yesevaFont: 'YesevaOne-Regular';
+$poppinsFont: 'Poppins';
+$rowWidth: 84em;
+$columns: 14;
+$columnSpace: 0.75em;
+$whiteColor: white;
+$whiteColor005: rgba(255,255,255,0.05);
+$whiteColor10: rgba(255,255,255,0.1);
+$whiteColor30: rgba(255,255,255,0.3);
+$whiteColor50: rgba(255,255,255,0.5);
+$blackColor: black;
+$dark1: #0F1320;
+$dark2: #232734;
+$dark3: #4B4F5C;
+$dark4: #373B48;
+$dark5: #5F6370;
+$yellow: #F2C94C;
+$red: #C41D2C;
+$grey3: #828282;
+$grey3_50: rgba(130, 130, 130, 0.5);
+$easing: cubic-bezier(0.5, 0.7, 0.4, 1);
+
+/*screenSises*/
+
+$xxxLarge: 120em; //1920
+$xxLarge: 100em; //1600
+$xLarge: 90em; //1440
+$large: 85.375em; //1366
+$small: 80em; //1280
+$tablet: 64em; //1024
+$xSmall: 48em; //768
+$mobile: 46em; //600

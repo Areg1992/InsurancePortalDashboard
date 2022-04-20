@@ -1,0 +1,44 @@
+h1 {
+  margin: 0;
+  @include font(80, 1.1, currentColor, 400, 0, $yesevaFont);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  @include font(62, 1.3, 0, 400, 0, $yesevaFont);
+}
+
+h3 {
+  margin: 0;
+  @include font(80, 1.1, 0, 400, capitalize, $yesevaFont);
+}
+
+.title {
+  margin-bottom: em(34);
+  letter-spacing: 0.95em;
+  @include font(14, 2.3, $dark1, 600, uppercase, $poppinsFont);
+
+  span {
+    font-family: $yesevaFont;
+    color: $red;
+  }
+  @media (max-width: $mobile) {
+    letter-spacing: 0.8em;
+  }
+}
+
+.read-more {
+  letter-spacing: 0.95em;
+  @include font(14, 1, 0, 600, uppercase, $poppinsFont);
+}
+
+.aside-menu-item {
+  letter-spacing: 0.02em;
+  @include font(24, 1.5, $dark1, 400, 0, $poppinsFont);
+}
+
+.card-title {
+  @include font(32, 1.25, $dark1, 400, 0, $yesevaFont);
+}
