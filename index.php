@@ -32,11 +32,17 @@
         <title></title>
         <link rel="stylesheet" href="dist/css/app.min.css"/>
     </head>
-    <body data-scrollbar id="main-scrollbar">
+    <body>
         <?php require("views/header.php"); ?>
         <?php require("views/sidebar.php"); ?>
+
         <main>
-            <?php require("views/reports.php"); ?>
+            <?php
+
+            $uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+
+            require("dist/views/". $uriSegments[2] .".php");
+            ?>
         </main>
 
 

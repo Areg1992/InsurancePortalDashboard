@@ -1,12 +1,12 @@
 @import "utils/module";
 @import "core/core";
 @import "core/_helpers";
+@import "components/_typography";
+@import "components/_button";
+@import "components/_avatar";
+@import "components/_card";
 @import "layouts/_grid";
 @import "layouts/_header";
 @import "layouts/_sidebar";
-@import "pages/_home";
-@import "pages/_reports";
-@import "components/_typography";
-@import "components/_button";
-@import "components/_card";
 @import "layouts/sidebar";
+@import "pages/_reports";

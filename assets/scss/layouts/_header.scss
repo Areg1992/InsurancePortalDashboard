@@ -1,75 +1,57 @@
 header {
-  z-index: 9;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: em(306);
   right: 0;
-  overflow: visible !important;
-
-  @media (max-width: $mobile) {
-    font-size: 13px;
-    footer {
-      padding-top: 20px;
-    }
-  }
+  background: #FFFFFF;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0 20px 0 0;
 }
 
-body {
+.header-nav {
+  padding: em(30) em(55) em(36) em(55);
+  a {
+    position: relative;
+    @include font(16, 1.3125, #42474A, 400, 0, $segoiUI);
 
-  &.menu-opened {
+    &.active {
+      color: #713BDB;
+      font-weight: 600;
 
-    header {
-      @media only screen and (hover: none) and (pointer: coarse){
-        overflow: auto !important;
-        -webkit-overflow-scrolling: touch;
-      }
-      //background-color: $dark1;
-      height: 100vh;
-      position: fixed;
-    }
-    .header-main {
-      position: relative;
-    }
-    #logo {
-      rect {
-        fill: $dark2;
+      &:after {
+        background-color: #713BDB;
       }
     }
-    @media (max-width: $mobile) {
-      #logo {
-        display: none;
-      }
-      .header-right {
-        display: flex;
-      }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: em(-4);
+      transform: translateX(-50%);
+      background: transparent;
+      width: em(16);
+      height: em(2);
+      border-radius: 2px;
     }
   }
-}
-
-.header-main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-left: em(216);
-  padding-right: em(216);
-  z-index: 11;
-
-  @media (max-width: $xSmall) {
-    padding-left: 0;
-    padding-right: 0;
+  ul {
+    column-gap: em(34);
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 }
 
 #burger-wrapper {
   width: em(80);
   height: em(80);
-  background-color: $dark3;
+  background-color: $blackColor;
   justify-content: center;
   align-items: center;
   @extend %flexBox, %userCursor;
 
   &.close {
-    background-color: $whiteColor005;
+    background-color: $whiteColor;
   }
 }
 
@@ -117,126 +99,5 @@ body {
     opacity: 0;
     width: 0;
     transform: rotate(90deg);
-  }
-}
-
-
-#logo {
-  display: block;
-  z-index: 4;
-  width: em(198);
-  height: em(80);
-
-  rect {
-    will-change: fill;
-  }
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  height: em(80);
-  padding-left: em(60);
-  padding-right: em(40);
-  letter-spacing: 0.95em;
-
-  &.home {
-    background-color: var(--whiteColor);
-  }
-
-  @media (max-width: $mobile) {
-    display: none;
-    padding-right: 12px;
-    padding-left: 0;
-  }
-  i {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: #0F1320;
-    opacity: 0.3;
-    margin-left: em(29);
-    margin-right: em(44);
-    will-change: background-color;
-    @include transition(background-color, 0.25s, ease);
-    
-    @media (max-width: $mobile) {
-      margin-right: 24px;
-      margin-left: 12px;
-    }
-  }
-  a {
-    will-change: color;
-    position: relative;
-    @include transition(all, 0.25s, ease);
-    @include font(14, 1.7, $dark1, 700, uppercase, $poppinsFont);
-  }
-  &.dark-cover {
-    background-color: transparent;
-
-    i {
-      background-color: var(--whiteColor);
-    }
-    a {
-      color: var(--whiteColor) !important;
-
-      &:after {
-        background-color: $yellow;
-      }
-    }
-  }
-  &.light-cover-red {
-    background-color: transparent;
-
-    a {
-      color: $dark1;
-
-      &:after {
-        background-color: $red;
-      }
-    }
-  }
-  &.light-cover-yellow {
-    background-color: transparent;
-
-    i {
-      background-color: var(--whiteColor);
-    }
-    a {
-      color: var(--whiteColor);
-
-      &:after {
-        background-color: $yellow;
-      }
-    }
-  }
-}
-
-.lang {
-  position: relative;
-}
-
-.donate {
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: em(-8);
-    width: em(38);
-    height: em(4);
-    background-color: $yellow;
-    will-change: all;
-    @include transition(all, 0.25s, ease);
-  }
-
-  &.active {
-
-    &:after {
-      width: 100%;
-    }
   }
 }

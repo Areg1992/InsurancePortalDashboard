@@ -7,4 +7,44 @@ aside {
   background: #FFFFFF;
   box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.05);
   border-radius: 20px 0 20px 20px;
+  padding: em(30) em(50) em(33) em(53);
+}
+
+#logo {
+  display: block;
+  margin-bottom: em(16);
+
+  span {
+    @include font(16, 1.3125, $blackColor, 400, 0, $segoiUI);
+  }
+}
+
+.sidebar-menu {
+  margin-top: em(50);
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: em(26);
+    a {
+      column-gap: em(25);
+
+      img {
+        filter: grayscale(1);
+      }
+      span {
+        @include font(16, 1.3125, #A2A4B9, 400, 0, $segoiUI);
+      }
+      &.active {
+
+        img {
+          filter: none;
+        }
+        span {
+          font-weight: 600;
+          color: #713BDB;
+        }
+      }
+    }
+  }
 }

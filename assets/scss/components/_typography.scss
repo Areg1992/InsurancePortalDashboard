@@ -1,44 +1,32 @@
 h1 {
   margin: 0;
-  @include font(80, 1.1, currentColor, 400, 0, $yesevaFont);
+  @include font(80, 1.1, currentColor, 400, 0, $segoiUI);
 }
 
-h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-  position: relative;
-  @include font(62, 1.3, 0, 400, 0, $yesevaFont);
-}
-
-h3 {
-  margin: 0;
-  @include font(80, 1.1, 0, 400, capitalize, $yesevaFont);
-}
-
-.title {
-  margin-bottom: em(34);
-  letter-spacing: 0.95em;
-  @include font(14, 2.3, $dark1, 600, uppercase, $poppinsFont);
-
-  span {
-    font-family: $yesevaFont;
-    color: $red;
-  }
-  @media (max-width: $mobile) {
-    letter-spacing: 0.8em;
+.user-title {
+  margin-top: em(8);
+  p {
+    margin: 0;
+    @include font(16, 1.3125, #888CB7, 700, 0, $segoiUI);
   }
 }
 
-.read-more {
-  letter-spacing: 0.95em;
-  @include font(14, 1, 0, 600, uppercase, $poppinsFont);
+.welcome-text {
+  margin-top: em(4);
+  p {
+    margin: 0;
+    @include font(10, 1.3125, #A2A4B9, 400, 0, $segoiUI);
+  }
 }
 
-.aside-menu-item {
-  letter-spacing: 0.02em;
-  @include font(24, 1.5, $dark1, 400, 0, $poppinsFont);
-}
+.plan-text {
+  margin-top: em(4);
+  margin-bottom: em(20);
+  p {
+    margin: 0;
+    @include font(14, 1.3125, #A2A4B9, 400, 0, $segoiUI);
+  }
+  a {
 
-.card-title {
-  @include font(32, 1.25, $dark1, 400, 0, $yesevaFont);
+  }
 }
