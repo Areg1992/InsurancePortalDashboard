@@ -29,22 +29,43 @@ aside {
     a {
       column-gap: em(25);
 
-      img {
-        filter: grayscale(1);
+      path {
+        will-change: fill;
+        transition: fill 0.25s;
       }
       span {
+        will-change: color, font-weight;
+        transition: color, font-weight 0.25s;
         @include font(16, 1.3125, #A2A4B9, 400, 0, $segoiUI);
       }
       &.active {
 
-        img {
-          filter: none;
+        path {
+          fill: #713BDB;
         }
         span {
           font-weight: 600;
           color: #713BDB;
         }
       }
+      &:hover {
+        path {
+          fill: #713BDB;
+        }
+        span {
+          color: #713BDB;
+        }
+      }
     }
+  }
+}
+
+.aside-link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: em(14);
+
+  span {
+    @include font(18, 1, #A2A4B9, 600, 0, $segoiUI);
   }
 }

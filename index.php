@@ -27,7 +27,6 @@
         <meta name="twitter:site" content="" />
         <link rel="shortcut icon" href="dist/img/fav.png"/>
         <link rel="icon" sizes="512x512" href=""/>
-        <link rel="manifest" href="manifest.json"/>
         <meta name="theme-color" content="#0c101b"/>
         <title></title>
         <link rel="stylesheet" href="dist/css/app.min.css"/>
@@ -36,16 +35,17 @@
         <?php require("views/header.php"); ?>
         <?php require("views/sidebar.php"); ?>
 
-        <main>
+        <div data-barba="wrapper" class="wrapper">
+
             <?php
 
             $uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
             require("dist/views/". $uriSegments[2] .".php");
             ?>
-        </main>
 
+        </div>
 
-        <script defer src="dist/js/main.min.js"></script
     </body>
+    <script defer src="dist/js/main.min.js"></script>
 </html>

@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li>
-                <a href="" class="active">
+                <a href="/InsurancePortalDashboard/reports" class="active">
                     Reports
                 </a>
             </li>
