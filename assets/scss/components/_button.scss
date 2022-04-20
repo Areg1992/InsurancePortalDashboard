@@ -5,6 +5,7 @@
   padding: em(8) em(19);
   cursor: pointer;
   border: 0;
+  column-gap: em(14);
 
   &-block {
     display: block;
@@ -14,7 +15,7 @@
     background: #713BDB;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.12);
     border-radius: 7px;
-    color: white;
+    color: $whiteColor;
     @include font(14, 1.3, $whiteColor, 700, 0, $segoiUI);
   }
 }
