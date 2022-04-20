@@ -8,4 +8,7 @@ Stack
 
 Please install modules from package.json (npm install)
 
+After installing packages
+Open cmd and run - gulp
+
 Project url (http://localhost/InsurancePortalDashboard/reports)
