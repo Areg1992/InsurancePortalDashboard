@@ -41,7 +41,7 @@
                 <nav class="sidebar-menu">
                     <ul class="flex-container flex-dir-column">
                         <li>
-                            <a href="" class="flex-container align-middle">
+                            <a href="">
                                 <?php require("dist/img/overview.svg"); ?>
                                 <span>
                                     Overview
@@ -49,7 +49,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="flex-container align-middle">
+                            <a href="">
                                 <?php require("dist/img/policy.svg"); ?>
                                 <span>
                                     Policy
@@ -57,7 +57,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/InsurancePortalDashboard/reports" class="flex-container align-middle active">
+                            <a href="/InsurancePortalDashboard/reports" class="active">
                                 <?php require("dist/img/report.svg"); ?>
                                 <span>
                                     Reports
@@ -65,7 +65,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="flex-container align-middle">
+                            <a href="">
                                 <?php require("dist/img/company.svg"); ?>
                                 <span>
                                     Company
@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="flex-container align-middle">
+                            <a href="">
                                 <?php require("dist/img/user_account.svg"); ?>
                                 <span>
                                     User Account
@@ -81,7 +81,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="" class="flex-container align-middle">
+                            <a href="">
                                 <?php require("dist/img/user_recips.svg"); ?>
                                 <span>
                                     History
